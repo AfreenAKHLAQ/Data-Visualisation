@@ -1,4 +1,4 @@
-<h1>Data-Visualisation</h1>
+Data-Visualisation
 
 **** AfreenDEFI24
 **** M2 DEFI 2023 - Data Visualisation
