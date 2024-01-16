@@ -1,35 +1,27 @@
-Data-Visualisation
+# Devoir de M2 DEFI - Data Visualisation
+M2 DEFI - Data Visualisation
 
-**** AfreenDEFI24
-**** M2 DEFI 2023 - Data Visualisation
+# Présentation du sujet
+Le sujet : ...
 
-******** Devoir de M2 DEFI - Data Visualisation
+# Jeu de données
+Les jeux de données utilisés : ...
 
-******** Présentation du sujet
-Texte de présentation du sujet...
+# OpenRefine & WikiData
+Utilisation d'OpenRefine et WikiData
 
-******** Jeu de données
-Informations sur le jeu de données utilisé...
+# Les Visualisations
 
-******** OpenRefine & WikiData
-Utilisation d'OpenRefine et WikiData...
-
-********  Les Visualisations
-
-************ Première visualisation
+## Première visualisation
 Analyse
 
-************ Deuxième visualisation
+## Deuxième visualisation
 Analyse
 
-************ Troisième visualisation
+## Troisième visualisation
 Analyse
 
-************ quatrième visualisation
-Analyse 
-
-
-******** Conclusion
-Conclusion générale du devoir...
+# Conclusion
+Conclusion générale
 
 ---
