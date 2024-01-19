@@ -45,6 +45,8 @@ SERVICE wikibase:label {
 bd:serviceParam wikibase:language "fr,en"}
 }
 ```
+<iframe style="width: 55vw; height: 50vh; border: none;" src="https://w.wiki/8tdP" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
 
 ## Deuxième visualisation
 Analyse
