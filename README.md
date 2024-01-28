@@ -12,7 +12,7 @@ _[Source : Région Île-de-France](https://data.iledefrance.fr/explore/dataset/l
 
 # 2. Requête Wikidata
 
-**Je veux faire une requête permettant de recenser tout les musées situés à Paris et affciher les résultats :**
+**Je veux faire une requête permettant de recenser tout les musées situés à Paris avec leurs coordonnées géographiques et affciher les résultats :**
 
 ```sparql
 # Listes des musées situés à Paris et leur coordonnées géographiques (latitude, longitude) 
