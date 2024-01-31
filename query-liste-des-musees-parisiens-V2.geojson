@@ -1,0 +1,300 @@
+{"features": [{
+    "geometry": {
+        "coordinates": [2.354742, 48.857507],
+        "type": "Point"
+    },
+    "id": "Association Azzedine Alaïa",
+    "properties": {
+        "name": "Association Azzedine Alaïa",
+        "description": "18 rue Verrerie, 75004"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.3326475816657615, 48.82624920026018],
+        "type": "Point"
+    },
+    "id": "Ateliers-musée Chana Orloff",
+    "properties": {
+        "name": "Ateliers-musée Chana Orloff",
+        "description": "7 villa Seurat, 75014"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.3387050258435806, 48.86603124016241],
+        "type": "Point"
+    },
+    "id": "Bibliothèque-musée De La Comédie-française",
+    "properties": {
+        "name": "Bibliothèque-musée De La Comédie-française",
+        "description": "98 galerie de Beaujolais, 75001"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.380303, 48.827938],
+        "type": "Point"
+    },
+    "id": "Galerie Mathgoth",
+    "properties": {
+        "name": "Galerie Mathgoth",
+        "description": "34 rue Hélène Brion, 75013"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.34055556, 48.89027778],
+        "type": "Point"
+    },
+    "id": "Musée D’art Et D’histoire Du Judaïsme",
+    "properties": {
+        "name": "Musée D’art Et D’histoire Du Judaïsme",
+        "description": "71 rue Temple, 75003"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.38055556, 48.845],
+        "type": "Point"
+    },
+    "id": "Petit Musée De L'argenterie",
+    "properties": {
+        "name": "Petit Musée De L'argenterie",
+        "description": "111 avenue Daumesnil, 75012"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.265248, 48.851911],
+        "type": "Point"
+    },
+    "id": "Fondation Le Corbusier",
+    "properties": {
+        "name": "Fondation Le Corbusier",
+        "description": "10 square du Docteur-Blanche, 75016"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.359593, 48.85964],
+        "type": "Point"
+    },
+    "id": "Maison De L'histoire De France",
+    "properties": {
+        "name": "Maison De L'histoire De France",
+        "description": "60 rue des Francs-Bourgeois, 75003"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.31416667, 48.83027778],
+        "type": "Point"
+    },
+    "id": "Musée Adzak",
+    "properties": {
+        "name": "Musée Adzak",
+        "description": "3 rue Jonquoy, 75014"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.2936111111111, 48.867777777778],
+        "type": "Point"
+    },
+    "id": "Musée Baccarat",
+    "properties": {
+        "name": "Musée Baccarat",
+        "description": "11 place des États-Unis, 75016"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.35565, 48.8512],
+        "type": "Point"
+    },
+    "id": "Musée Boleslas Biegas",
+    "properties": {
+        "name": "Musée Boleslas Biegas",
+        "description": "6 quai d'Orléans, 75004"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.3225, 48.86777778],
+        "type": "Point"
+    },
+    "id": "Musée Bouilhet-christofle",
+    "properties": {
+        "name": "Musée Bouilhet-christofle",
+        "description": "9 rue Royale, 75008"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.33638889, 48.84361111],
+        "type": "Point"
+    },
+    "id": "Musée Moissan",
+    "properties": {
+        "name": "Musée Moissan",
+        "description": "4 avenue de l'Observatoire, 75006"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.31139, 48.84028],
+        "type": "Point"
+    },
+    "id": "Musée Pasteur",
+    "properties": {
+        "name": "Musée Pasteur",
+        "description": "25 rue du Docteur-Roux, 75015"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.31416667, 48.84777778],
+        "type": "Point"
+    },
+    "id": "Musée Valentin-haüy",
+    "properties": {
+        "name": "Musée Valentin-haüy",
+        "description": "5 rue Duroc, 75007"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.311522, 48.858063],
+        "type": "Point"
+    },
+    "id": "Musée D'histoire Contemporaine",
+    "properties": {
+        "name": "Musée D'histoire Contemporaine",
+        "description": "129 rue de Grenelle, 75007"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.35013889, 48.85333333],
+        "type": "Point"
+    },
+    "id": "Musée De Notre Dame De Paris",
+    "properties": {
+        "name": "Musée De Notre Dame De Paris",
+        "description": "10 rue du Cloître-Notre-Dame, 75004"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.27833333, 48.8525],
+        "type": "Point"
+    },
+    "id": "Musée De Radio France",
+    "properties": {
+        "name": "Musée De Radio France",
+        "description": "116 avenue du Président-Kennedy, 75016"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.3469444, 48.8619444],
+        "type": "Point"
+    },
+    "id": "Musée De L'holographie",
+    "properties": {
+        "name": "Musée De L'holographie",
+        "description": "20 rue Ermitage, 75020"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.28741, 48.86218],
+        "type": "Point"
+    },
+    "id": "Musée De L'homme",
+    "properties": {
+        "name": "Musée De L'homme",
+        "description": "17 Place du Trocadéro, 75016"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.3482, 48.8495],
+        "type": "Point"
+    },
+    "id": "Musée De La Préfecture De Police",
+    "properties": {
+        "name": "Musée De La Préfecture De Police",
+        "description": "4 rue de la Montagne-Sainte-Geneviève, 75005"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.3619, 48.8591],
+        "type": "Point"
+    },
+    "id": "Musée De La Serrure",
+    "properties": {
+        "name": "Musée De La Serrure",
+        "description": "1 rue de la Perle, 75003"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.38222222, 48.85861111],
+        "type": "Point"
+    },
+    "id": "Musée Du Fumeur",
+    "properties": {
+        "name": "Musée Du Fumeur",
+        "description": "7 rue Pache, 75011"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.321866, 48.858068],
+        "type": "Point"
+    },
+    "id": "Musée Social",
+    "properties": {
+        "name": "Musée Social",
+        "description": "5 Rue las Cases, 75007"
+    },
+    "type": "Feature"
+},
+{
+    "geometry": {
+        "coordinates": [2.32917, 48.8699],
+        "type": "Point"
+    },
+    "id": "Théâtre-musée Des Capucines",
+    "properties": {
+        "name": "Théâtre-musée Des Capucines",
+        "description": "39 boulevard des Capucines, 75002"
+    },
+    "type": "Feature"
+}], "type": "FeatureCollection"}
