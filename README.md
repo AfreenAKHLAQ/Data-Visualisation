@@ -121,13 +121,14 @@ Cette requête m'a permis de récupérées des données (Fichier 4) puis de les 
 <iframe title="Liste des musées situés à Paris" aria-label="Tableau" id="datawrapper-chart-pJ8Cw" src="https://datawrapper.dwcdn.net/pJ8Cw/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="866" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
-> *[Jeu de données utilisé : Fichier 4 après modifications](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/Fichiers_utilis%C3%A9s/4_query-wikidata-liste-des-musees-parisiens.csv)*
+> *[Jeu de données utilisé : Fichier 4](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/Fichiers_utilis%C3%A9s/4_query-wikidata-liste-des-musees-parisiens.csv)*
 
 Après avoir comblé les données manquantes, je croisent ce jeu de données avec la liste des « Musées de France » à Paris et je vérifie qu’il n’y a pas de doublons dans un fichier Excel. Je crée ensuite une carte montrant les musées parisiens avec et sans le label « Musées de France ».
 
 <iframe width="100%" height="800px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/les-musees-parisiens_1015509?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true&captionMenus=true&fullscreenControl=true&locateControl=false&editinosmControl=false&starControl=false"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/les-musees-parisiens_1015509?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true&captionMenus=true&fullscreenControl=true&locateControl=false&editinosmControl=false&starControl=false">Voir en plein écran</a></p>
 
 > *[Jeu de données utilisé : Fichier 5](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/Fichiers_utilis%C3%A9s/5_query-wikidata-liste-des-musees-parisiens.GEOJSON)*
+
 > *[Jeu de données utilisé : Fichier 6](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/Fichiers_utilis%C3%A9s/6_liste-des-musees-franciliens.geojson)*
 
 Je vois qu'il y a à peu près autant de musées parisiens avec le label « Musées de France » que sans. Toutefois, et c'est un choix personnel, je préfère les musées labbilisés. Je préfère aussi suivre le mouvement des gens, tel un mouton. C'est pour cela que je cherche maintenant à savoir quels musées sont les plus visités.
