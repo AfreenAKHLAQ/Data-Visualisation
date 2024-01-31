@@ -6,7 +6,7 @@
 3. [Commençons par l’Île-de-France…](#3)
 4. [Zoom sur Paris](#4)
 5. [Quels sont les musées que préfèrent les gens ?](#5)
-6. [Titre](#6)
+6. [Je veux des photos !](#6)
 7. [Titre](#7)
 
 
@@ -54,8 +54,6 @@ Il semblerait, à priori, que la région parisienne détient le plus grand nombr
 Je réalise donc un Treemap, ou une carte proportionnelle :
 
 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/16629623"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-Donc ma constatation visuelle était bien correcte, les "Mus
 
 Donc ma constatation visuelle était bien correcte : les « Musées de France en Île-de-France » se retrouvent surtout autour de Paris.
 
@@ -121,7 +119,7 @@ Après avoir comblé les données manquantes, je croisent ce jeu de données ave
 
 Je vois qu'il y à peu près autant de musées parisiens avec le label « Musées de France » et que sans. Toutefois, et c'est un choix personnel, je préfère les musées labbilisées. Je préfère aussi suivre le mouvement des gens tel un moutons. C'est pour cela que je cherche maintenant à savoir quels musées sont les plus visités.
 
-# Quels sont les musées que préfèrent les gens <a name="5"></a>
+# 5. Quels sont les musées que préfèrent les gens <a name="5"></a>
 
 J'utilise maintenant mon second fichier ([frequentation-des-musees-de-France-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-des-musees-de-france-V2.csv)) pour visualiser les 10 musées les plus visités chaque années pour les 10 dernières années. Mais les données ne sont valables que jusqu'à 2021, donc je me contente des Top 10 de de 2011 à 2021 :
 
@@ -137,9 +135,14 @@ Je suis une personne curieuse, mais aussi paresseuse. Je me demande à quoi ress
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/16635811"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
----
+Ici aussi, la tendence des musées les plus fréquentés est la même mais parmis les musées les moins fréquentés se trouve le Musée de Montmartre. Cela me semble douteux pusqu'il s'agit d'un site touristique assez connu.
 
-# 4. Requête Wikidata
+# 6. Je veux des photos ! <a name="6"></a>
+
+Mainbtenant que j'ai une idées globale des musées qui me sont disponibles, je veux aussi pouvoir voir à quoi ils ressemblent. Quoi de mieu qu'une requête Wikidata pour cela ?
+
+Pour cette requête, j'ai utiliser les identififant d'un colonne réconcilée sur les noms des musées. L'expression GREL "(wd:" + value + " " + (row.index + 1) + ")" m'a permis de mui donné la forme voulu pour ma requête et export Excel suivi de l'opération "=CONCAT(F2:F50;"")" sur la colonne m'ont permis d'obtenir ma liste de valeur ordonées :
+
 ```sparql
 #defaultView:ImageGrid
 SELECT ?item ?itemLabel ?imageLink
@@ -155,5 +158,6 @@ ORDER BY ?order
 ```
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0ASELECT%20%3Fitem%20%3FitemLabel%20%3FimageLink%0AWHERE%20%7B%0A%20%20VALUES%20(%3Fitem%20%3Forder)%20%7B%0A%20%20(wd%3AQ3330124%201)(wd%3AQ3329303%202)(wd%3AQ3330300%203)(wd%3AQ3075375%204)(wd%3AQ15731380%205)(wd%3AQ2391572%206)(wd%3AQ88645654%207)(wd%3AQ2714932%208)(wd%3AQ1889428%209)(wd%3AQ1632912%2010)(wd%3AQ1319378%2011)(wd%3AQ19675%2012)(wd%3AQ977732%2013)(wd%3AQ3329933%2014)(wd%3AQ23402%2015)(wd%3AQ23600018%2016)(wd%3AQ2415229%2017)(wd%3AQ105988788%2018)(wd%3AQ30538871%2019)(wd%3AQ2860590%2020)(wd%3AQ23639828%2021)(wd%3AQ1631711%2022)(wd%3AQ3329734%2023)(wd%3AQ3329594%2024)(wd%3AQ3330694%2025)(wd%3AQ23600382%2026)(wd%3AQ23600219%2027)(wd%3AQ2588025%2028)(wd%3AQ2342844%2029)(wd%3AQ3329245%2030)(wd%3AQ3330653%2031)(wd%3AQ3330509%2032)(wd%3AQ3329026%2033)(wd%3AQ3329618%2034)(wd%3AQ64549730%2035)(wd%3AQ547789%2036)(wd%3AQ1585909%2037)(wd%3AQ2915606%2038)(wd%3AQ1094332%2039)(wd%3AQ2613771%2040)(wd%3AQ106448129%2041)(wd%3AQ1955698%2042)(wd%3AQ1998638%2043)(wd%3AQ1124095%2044)(wd%3AQ838691%2045)(wd%3AQ650519%2046)(wd%3AQ30303348%2047)(wd%3AQ23599965%2048)(wd%3AQ23600488%2049)(wd%3AQ3330528%2050)(wd%3AQ1189955%2051)(wd%3AQ3329627%2052)(wd%3AQ3330076%2053)(wd%3AQ23600423%2054)(wd%3AQ3418414%2055)(wd%3AQ3330506%2056)(wd%3AQ3075615%2057)(wd%3AQ3330577%2058)(wd%3AQ3329327%2059)(wd%3AQ3329330%2060)(wd%3AQ3329678%2061)(wd%3AQ28033642%2062)(wd%3AQ1667022%2063)(wd%3AQ1572452%2064)(wd%3AQ88640485%2065)(wd%3AQ860166%2066)(wd%3AQ3330482%2067)(wd%3AQ2445818%2068)(wd%3AQ2919066%2069)(wd%3AQ726781%2070)(wd%3AQ1538826%2071)(wd%3AQ1895953%2072)(wd%3AQ1782606%2073)(wd%3AQ2597719%2074)(wd%3AQ3330663%2075)(wd%3AQ3329170%2076)(wd%3AQ2970121%2077)(wd%3AQ23600664%2078)(wd%3AQ3330504%2079)(wd%3AQ3329788%2080)(wd%3AQ23640566%2081)(wd%3AQ1955692%2082)(wd%3AQ23599751%2083)(wd%3AQ3329963%2084)(wd%3AQ23639850%2085)(wd%3AQ3329993%2086)(wd%3AQ107269421%2087)(wd%3AQ3330439%2088)(wd%3AQ23599717%2089)(wd%3AQ36362855%2090)(wd%3AQ23599912%2091)(wd%3AQ31203332%2092)(wd%3AQ3329858%2093)(wd%3AQ2715373%2094)(wd%3AQ857276%2095)(wd%3AQ167863%2096)(wd%3AQ1579504%2097)(wd%3AQ1094302%2098)(wd%3AQ1128657%2099)(wd%3AQ743206%20100)(wd%3AQ1996069%20101)(wd%3AQ1954498%20102)(wd%3AQ2296362%20103)(wd%3AQ23057803%20104)(wd%3AQ3578591%20105)(wd%3AQ3330084%20107)(wd%3AQ1530976%20108)(wd%3AQ3330182%20109)(wd%3AQ1587628%20110)(wd%3AQ2599177%20111)(wd%3AQ640447%20112)(wd%3AQ43688220%20113)(wd%3AQ59546080%20114)(wd%3AQ860994%20115)(wd%3AQ3329915%20116)(wd%3AQ3330523%20117)(wd%3AQ23599848%20118)(wd%3AQ17560765%20119)(wd%3AQ82748%20120)(wd%3AQ611062%20121)(wd%3AQ23600534%20122)(wd%3AQ3330518%20123)(wd%3AQ3329532%20124)(wd%3AQ2420675%20125)(wd%3AQ23639858%20126)(wd%3AQ3329216%20127)(wd%3AQ3329361%20128)(wd%3AQ23641285%20129)(wd%3AQ1230290%20130)(wd%3AQ3330662%20131)(wd%3AQ2946%20132)%20%0A%20%20%7D%0A%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3FimageLink.%20%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20%3Forder%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
+(J'ai utiliser cette colonne en la copiant/collant dans mes fichiers CSV pour obtenir des photos sur mes visualisations)
 
 <3
