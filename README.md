@@ -4,7 +4,7 @@
 1. [Pourquoi ce sujet ?](#1)
 2. [Comment répondre à ces questions ? Avec l’Open Data !](#2)
 3. [Commençons par l’Île-de-France…](#3)
-4. [Titre](#4)
+4. [Zoom sur Paris](#4)
 5. [Titre](#5)
 6. [Titre](#6)
 7. [Titre](#7)
@@ -66,18 +66,27 @@ Il peut y avoir plusieurs raisons pour cela :
 
 Cela tombe bien, car je suis fauchée et je n’ai pas le permis. Plus encore, en 6 jours (avant mon anniversaire) je n’ai pas le temps d’aller visiter les « Musées de France » de toute l’Île-de-France.
 
-# 4. Zoomons maintenant sur Paris <a name="4"></a>
+# 4. Zoom sur Paris <a name="4"></a>
 
-
-
-# 4. Musées situés à Paris labélisés "Musées de France" <a name="4"></a>
-
-
+Je veux voir la liste de tous les « Musées de France » situé à Paris. Je réalise donc un tableau :
 
 <iframe title="Musées situés à Paris labélisés &quot;Musées de France&quot;" aria-label="Tableau" id="datawrapper-chart-mbgXq" src="https://datawrapper.dwcdn.net/mbgXq/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="938" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
-# 4. Requête Wikidata
+Je veux maintenant savoir quel est leur âge. Ou plutôt, quel est leur date de création. Il suffit d'une réconciliation sur OpenRefine pour exaucer mon vœux. Je créer ainsi une frise chronologique des date d’ouverture officielle des musées parisiens ayant le label « Musées de France » en les répartissant par arrondissement :
+
+<div class="flourish-embed flourish-scatter" data-src="visualisation/16636476"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+Voilà ! Maintenant je sais qu'il n'y a pas de « Musées de France » dans 2ème et le 20ème arrondissment mais qu'il y en a 7 dans 16ème. Pourquoi ne pas commencer mes Sorties Musées par le 16ème arrondissement donc ?
+
+J’ai donc le choix de 48 jolis « Musées de France » avec le plus ancient datant de 1793 (Le Muséum National d'Histoire Naturelle) et le plus récent, de 2017 (Le Musée Yves Saint-Laurent Paris). C'est déjà pas mal. Mais par curiosité, je me demande combien il y a vraiment de musées dans la ville de Paris.
+
+Pour répondre à cette question, ma première recherche m’a amené sur la page Wikipédia de la [Catégorie:Musée à Paris]( https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Mus%C3%A9e_%C3%A0_Paris). Cette page présente 96 liens vers des pages qui ne sont pas toutes celles de musées.
+
+Que faire ? Consulter les 96 liens et vérifier, pour chacun, s’il s’agit bien de la page d'un musée ? Ou alors, faire une requête SPARQL sur Wikidata Query Service permettant de recenser les musées situés à Paris ? 
+
+Go sur Wikidata !
+
 ```sparql
 # Listes des musées situés à Paris et leur coordonnées géographiques (latitude, longitude) 
 SELECT DISTINCT ?musee ?museeLabel ?lat ?long (CONCAT(STR(?lat),", ",STR(?long)) as ?lat_long)
@@ -100,11 +109,13 @@ ORDER BY ?museeLabel
 
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23%20Listes%20des%20mus%C3%A9es%20situ%C3%A9s%20%C3%A0%20Paris%20et%20leur%20coordonn%C3%A9es%20g%C3%A9ographiques%20(latitude%2C%20longitude)%20%0ASELECT%20DISTINCT%20%3Fmusee%20%3FmuseeLabel%20%3Flat%20%3Flong%20(CONCAT(STR(%3Flat)%2C%22%2C%20%22%2CSTR(%3Flong))%20as%20%3Flat_long)%0AWHERE%20%7B%0A%20%20%3Fmusee%20wdt%3AP31%20wd%3AQ33506.%20%23%20Instance%20de%20mus%C3%A9e%20(Q33506)%20ou%20ses%20sous-classes%20(P31%2Fwdt%3AP279*)%0A%20%20%3Fmusee%20wdt%3AP131%20wd%3AQ90.%20%23%20Situ%C3%A9%20%C3%A0%20(P131)%20Paris%20(Q90)%0A%0A%20%20OPTIONAL%20%7B%20%0A%20%20%20%20%3Fmusee%20wdt%3AP625%20%3Fcoordonees.%20%23%20P625%3A%20Coordonn%C3%A9es%20g%C3%A9ographiques%0A%20%20%20%20%3Fmusee%20p%3AP625%20%3Fdeclaration.%0A%20%20%20%20%3Fdeclaration%20psv%3AP625%20%3Fcoord_geo.%0A%20%20%20%20%3Fcoord_geo%20wikibase%3AgeoLatitude%20%3Flat.%0A%20%20%20%20%3Fcoord_geo%20wikibase%3AgeoLongitude%20%3Flong.%20%20%20%20%0A%20%20%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20%3FmuseeLabel%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
-# 5. Map de Paris
+Ma requête m'offfre les noms et les coordonnées géographiques des musées situé à Paris. 
+
+Après avoir comblé les données manquantes, je croisent ce jeu de données avec la liste des « Musées de France » à Paris. Je vérifie qu’il n’y a pas de doublons et je crée une carte montrant les musées parisiens avec et sans le label « Musées de France ».
+
 <iframe width="100%" height="800px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/les-musees-parisiens_1015509?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true&captionMenus=true&fullscreenControl=true&locateControl=false&editinosmControl=false&starControl=false"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/les-musees-parisiens_1015509?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true&captionMenus=true&fullscreenControl=true&locateControl=false&editinosmControl=false&starControl=false">Voir en plein écran</a></p>
 
-# 6. Timeline
-<div class="flourish-embed flourish-scatter" data-src="visualisation/16636476"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
 
 # Fréquentation des musées : Top 10 de 2011 à 2021
 <div class="flourish-embed flourish-chart" data-src="visualisation/16601101"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
