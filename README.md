@@ -38,20 +38,25 @@ Un Srpint Qualité allégé m’a permis de vérifier que chaque jeu de données
 
 Ces jeux de données couplés aux outils comme OpenRefine, Datwrapper, Flourish et uMap m’ont permis de traiter et visualiser les données afin de pouvoir organiser au mieux mes Sorties Musées.
 
-## 3. Commençons par l’Île-de-France… <a name="3"></a>
+# 3. Commençons par l’Île-de-France… <a name="3"></a>
+
+Je commence mon exploration en visualisant tout ce qui s’offre à moi, sans aller trop loin. Pour cela, je créer une carte affichant tous les « Musées de France » en Île-de-France.
 
 <iframe title="Les &quot;Musées de France&quot; en Île-de-France" aria-label="Carte" id="datawrapper-chart-2JZHu" src="https://datawrapper.dwcdn.net/2JZHu/9/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="808" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
+Il semblerait, à priori, que la région parisienne détient le plus grand nombre de Musées de France. Je veux vérifier cela et par la même occasion voir la répartition du nombre de « Musées de France » en Île-de-France par département et par commune.
 
+Je réalise donc un Treemap, ou une carte proportionnelle :
 
-## 1. Titre <a name="1"></a>
-
-
-# 2. Répartitions des musées en Île-de-France
 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/16629623"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-# 3. Musées situés à Paris labélisés "Musées de France"
+ 
+
+# 4. Musées situés à Paris labélisés "Musées de France" <a name="4"></a>
+
+
+
 <iframe title="Musées situés à Paris labélisés &quot;Musées de France&quot;" aria-label="Tableau" id="datawrapper-chart-mbgXq" src="https://datawrapper.dwcdn.net/mbgXq/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="938" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
 
