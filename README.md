@@ -24,9 +24,13 @@ C'est dans cette perspective d’organisation de Sorties Musées que je me pose 
 
 # 2. Comment répondre à ces questions ? Avec l’Open Data ! <a name="2"></a>
 
-La plateforme open data de la Région Île-de-France m’a fourni mon jeu de données initial : [La liste des Musées de France](https://data.iledefrance.fr/explore/dataset/liste_des_musees_franciliens/information/?disjunctive.region_administrative&disjunctive.departement) [liste-des-musees-franciliens-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-franciliens-V2.csv). Il s’agit d’un fichier de 133 lignes recensant toutes les « institutions dotées de l'appellation "Musée de France" au sens du Code du patrimoine. » Je note donc qu’il ne s’agit pas de tous les musées d’Île-de-France.
+La plateforme open data de la Région Île-de-France m’a fourni mon jeu de données initial : [La liste des Musées de France](https://data.iledefrance.fr/explore/dataset/liste_des_musees_franciliens/information/?disjunctive.region_administrative&disjunctive.departement). Il s’agit d’un fichier de 133 lignes recensant toutes les « institutions dotées de l'appellation "Musée de France" au sens du Code du patrimoine. » Je note donc qu’il ne s’agit pas de tous les musées d’Île-de-France.
+*Fichier 1 après modifications : [liste-des-musees-franciliens-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-franciliens-V2.csv)*
 
-J’ai tiré mes deux autres jeux de données de la plateforme de données ouvertes du ministère de la Culture : [Fréquentation des Musées de France](https://data.culture.gouv.fr/explore/dataset/frequentation-des-musees-de-france/export/?disjunctive.nomdep) (frequentation-des-musees-de-France-V2.csv et frequentation-totale-mdf-2001-a-2016-V2.csv). On trouve dans les deux jeux de données, la fréquentation totale, payante et gratuite dans les Musées de France, de 2001 à 2016 dans un jeu de données et de 2001 à 2021 dans l'autre.
+J’ai tiré mes deux autres jeux de données de la plateforme de données ouvertes du ministère de la Culture : [Fréquentation des Musées de France](https://data.culture.gouv.fr/explore/dataset/frequentation-des-musees-de-france/export/?disjunctive.nomdep). On trouve dans les deux jeux de données, la fréquentation totale, payante et gratuite dans les Musées de France, de 2001 à 2021 dans le premier et de 2001 à 2016 dans le deuxième.
+*Fichier 2 après modifications : [frequentation-des-musees-de-France-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-des-musees-de-france-V2.csv)*
+*Fichier 3 après modifications :[frequentation-totale-mdf-2001-a-2016-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-totale-mdf-2001-a-2016-V2.csv)*
+
 
 Un Srpint Qualité allégé m’a permis de vérifier que chaque jeu de données était : 
 * facilement accessible, 
@@ -40,7 +44,7 @@ Ces jeux de données couplés aux outils comme OpenRefine, Datwrapper, Flourish 
 
 # 3. Commençons par l’Île-de-France… <a name="3"></a>
 
-Je commence mon exploration en visualisant tout ce qui s’offre à moi, sans aller trop loin. Pour cela, je vais utiliser mon premier fichier (liste-des-musees-franciliens-V2), le nettoyer sur OpenRefine et créer une carte affichant tous les « Musées de France » en Île-de-France.
+Je commence mon exploration en visualisant tout ce qui s’offre à moi, sans aller trop loin. Pour cela, je vais utiliser mon premier fichier ([liste-des-musees-franciliens-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-franciliens-V2.csv)), le nettoyer sur OpenRefine et créer une carte affichant tous les « Musées de France » en Île-de-France.
 
 <iframe title="Les &quot;Musées de France&quot; en Île-de-France" aria-label="Carte" id="datawrapper-chart-2JZHu" src="https://datawrapper.dwcdn.net/2JZHu/9/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="808" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
@@ -109,9 +113,9 @@ ORDER BY ?museeLabel
 
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23%20Listes%20des%20mus%C3%A9es%20situ%C3%A9s%20%C3%A0%20Paris%20et%20leur%20coordonn%C3%A9es%20g%C3%A9ographiques%20(latitude%2C%20longitude)%20%0ASELECT%20DISTINCT%20%3Fmusee%20%3FmuseeLabel%20%3Flat%20%3Flong%20(CONCAT(STR(%3Flat)%2C%22%2C%20%22%2CSTR(%3Flong))%20as%20%3Flat_long)%0AWHERE%20%7B%0A%20%20%3Fmusee%20wdt%3AP31%20wd%3AQ33506.%20%23%20Instance%20de%20mus%C3%A9e%20(Q33506)%20ou%20ses%20sous-classes%20(P31%2Fwdt%3AP279*)%0A%20%20%3Fmusee%20wdt%3AP131%20wd%3AQ90.%20%23%20Situ%C3%A9%20%C3%A0%20(P131)%20Paris%20(Q90)%0A%0A%20%20OPTIONAL%20%7B%20%0A%20%20%20%20%3Fmusee%20wdt%3AP625%20%3Fcoordonees.%20%23%20P625%3A%20Coordonn%C3%A9es%20g%C3%A9ographiques%0A%20%20%20%20%3Fmusee%20p%3AP625%20%3Fdeclaration.%0A%20%20%20%20%3Fdeclaration%20psv%3AP625%20%3Fcoord_geo.%0A%20%20%20%20%3Fcoord_geo%20wikibase%3AgeoLatitude%20%3Flat.%0A%20%20%20%20%3Fcoord_geo%20wikibase%3AgeoLongitude%20%3Flong.%20%20%20%20%0A%20%20%7D%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20%3FmuseeLabel%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
-Ma requête m'offfre les noms et les coordonnées géographiques des musées situé à Paris. 
+Ma requête m'offfre les noms et les coordonnées géographiques des musées situé à Paris. J'en fait un fichier que je nettoie et modifie selon mes besoins ([query-liste-des-musees-parisiens.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/query-liste-des-musees-parisiens.csv)).
 
-Après avoir comblé les données manquantes, je croisent ce jeu de données avec la liste des « Musées de France » à Paris. Je vérifie qu’il n’y a pas de doublons et je crée une carte montrant les musées parisiens avec et sans le label « Musées de France ».
+Après avoir comblé les données manquantes, je croisent ce jeu de données avec la liste des « Musées de France » à Paris et je vérifie qu’il n’y a pas de doublons dans un fichier Excel ([liste-des-musees-verification-doublons.xls](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-verification-doublons.xls)). Je crée ensuite une carte montrant les musées parisiens avec et sans le label « Musées de France ».
 
 <iframe width="100%" height="800px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/les-musees-parisiens_1015509?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true&captionMenus=true&fullscreenControl=true&locateControl=false&editinosmControl=false&starControl=false"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/les-musees-parisiens_1015509?scaleControl=true&miniMap=true&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=true&captionMenus=true&fullscreenControl=true&locateControl=false&editinosmControl=false&starControl=false">Voir en plein écran</a></p>
 
@@ -119,12 +123,18 @@ Je vois qu'il y à peu près autant de musées parisiens avec le label « Musée
 
 # Quels sont les musées que préfèrent les gens <a name="5"></a>
 
-J'utilise maintenant mon second fichier pour 
+J'utilise maintenant mon second fichier ([frequentation-des-musees-de-France-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-des-musees-de-france-V2.csv)) pour visualiser les 10 musées les plus visités chaque années pour les 10 dernières années. Mais les données ne sont valables que jusqu'à 2021, donc je me contente des Top 10 de de 2011 à 2021 :
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/16601101"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
+Je vois que trois musées restent constamment les premiers, en commençant par le Musée du Louvre, puis le Musée d’Orsay et le Musée National d'Art Moderne (MNAM) qui est situé à Paris dans le centre Georges-Pompidou.
 
-# Fréquentation des musées : Evolution de 2001 à 2011
+Cette constance peut s’explique par la notoriété de ces trois musées, mais aussi par le fais que créer ce Top 10, j’ai due retirée tous les musées ayant ne seraient-ce qu’une seule donnée manquante (pour des questions de lisibilité de la visualisation). On pourrait se demander si ces Top 10 seraient différents avec toutes les données.
+
+Ce que je trouve surprennant, c'est que les entrées majoritairent, sont les entrées payantes. Ce n'est que pour le Musées du Louvre que l'ont voit la tendance s'inversée légèrement après l'année du Covid.
+
+Je suis une personne curieuse, mais aussi paresseuse. Je me demande à quoi ressemble l'évolution de la fréquentation des 10 dernières dernières années. C'est-à-dire de 2001 à 2011. Pour cela, je choisi sur le site du Minitère de la Culture, un fichier tout prêt et que je mofifie légèrement ([frequentation-totale-mdf-2001-a-2016-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-totale-mdf-2001-a-2016-V2.csv)) pour obtenir la visualisation que je souhaite : 
+
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/16635811"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 ---
