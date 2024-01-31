@@ -10,9 +10,7 @@
 
 # 1. Pourquoi ce sujet ? <a name="1"></a>
 
-Parce qu’il n’y avait pas assez de données sur les Français descendants d’immigrés pakistanais en France. Un sujet qui me tient à cœur (pour des raisons évidentes si vous me connaissez).
-
-Un autre sujet qui me tient à cœur est mon âge. Je suis sur le point d’avoir 26 ans et je vais donc devoir payer mon entrée au musée. Mes derniers jours de jeunesse me poussent à sortir et profiter de la gratuité des musées... avant la fin.
+Parce je suis sur le point d’avoir 26 ans et je vais donc devoir payer mon entrée au musée. Mes derniers jours de jeunesse me poussent à sortir et profiter de la gratuité des musées... avant la fin.
 
 C'est dans cette perspective d’organisation de Sorties Musées que je me pose quelques questions : 
 * Combien est-ce qu'il y a de musées en Île-de-France ?
@@ -22,12 +20,15 @@ C'est dans cette perspective d’organisation de Sorties Musées que je me pose 
 
 # 2. Comment répondre à ces questions ? Avec l’Open Data ! <a name="2"></a>
 
-La plateforme open data de la Région Île-de-France m’a fourni mon jeu de données initial : [La liste des Musées de France](https://data.iledefrance.fr/explore/dataset/liste_des_musees_franciliens/information/?disjunctive.region_administrative&disjunctive.departement). Il s’agit d’un fichier de 133 lignes recensant toutes les « institutions dotées de l'appellation "Musée de France" au sens du Code du patrimoine. » Je note donc qu’il ne s’agit pas de tous les musées d’Île-de-France.
-*Fichier 1 après modifications : [liste-des-musees-franciliens-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-franciliens-V2.csv)*
+La plateforme open data de la Région Île-de-France m’a fourni mon jeu de données initial (Fichier 1) : [La liste des Musées de France](https://data.iledefrance.fr/explore/dataset/liste_des_musees_franciliens/information/?disjunctive.region_administrative&disjunctive.departement). Il s’agit d’un fichier de 133 lignes recensant toutes les « institutions dotées de l'appellation "Musée de France" au sens du Code du patrimoine. » Je note donc qu’il ne s’agit pas de tous les musées d’Île-de-France.
+
+
 
 J’ai tiré mes deux autres jeux de données de la plateforme de données ouvertes du ministère de la Culture : [Fréquentation des Musées de France](https://data.culture.gouv.fr/explore/dataset/frequentation-des-musees-de-france/export/?disjunctive.nomdep). On trouve dans les deux jeux de données, la fréquentation totale, payante et gratuite dans les Musées de France, de 2001 à 2021 dans le premier et de 2001 à 2016 dans le deuxième.
-*Fichier 2 après modifications : [frequentation-des-musees-de-France-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-des-musees-de-france-V2.csv)*
-*Fichier 3 après modifications :[frequentation-totale-mdf-2001-a-2016-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-totale-mdf-2001-a-2016-V2.csv)*
+
+* *Fichier 1 après modifications : [liste-des-musees-franciliens-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-franciliens-V2.csv)*
+* *Fichier 2 après modifications : [frequentation-des-musees-de-France-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-des-musees-de-france-V2.csv)*
+* *Fichier 3 après modifications :[frequentation-totale-mdf-2001-a-2016-V2.csv](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/frequentation-totale-mdf-2001-a-2016-V2.csv)*
 
 
 Un Srpint Qualité allégé m’a permis de vérifier que chaque jeu de données était : 
