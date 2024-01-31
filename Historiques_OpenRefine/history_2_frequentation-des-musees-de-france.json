@@ -1,0 +1,250 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "VILLE",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Paris"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PARIS"
+      }
+    ],
+    "description": "Mass edit cells in column VILLE"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "VILLE",
+          "expression": "value",
+          "columnName": "VILLE",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "PARIS",
+                "l": "PARIS"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "NOTE",
+          "expression": "value",
+          "columnName": "NOTE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "F",
+                "l": "F"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "NOM DU MUSEE",
+          "columnName": "NOM DU MUSEE",
+          "query": "Bouchard",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "NOM DU MUSEE",
+          "columnName": "NOM DU MUSEE",
+          "query": "Musée de la Mode et du Textile",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "NOM DU MUSEE",
+          "columnName": "NOM DU MUSEE",
+          "query": "Musée de la Publicité",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "NOM DU MUSEE",
+          "columnName": "NOM DU MUSEE",
+          "query": "Lénine",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "NOM DU MUSEE",
+          "columnName": "NOM DU MUSEE",
+          "query": "National des Arts et des Traditions Populaires",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "ANNEE",
+          "expression": "value",
+          "columnName": "ANNEE",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2001",
+                "l": "2001"
+              }
+            },
+            {
+              "v": {
+                "v": "2010",
+                "l": "2010"
+              }
+            },
+            {
+              "v": {
+                "v": "2009",
+                "l": "2009"
+              }
+            },
+            {
+              "v": {
+                "v": "2008",
+                "l": "2008"
+              }
+            },
+            {
+              "v": {
+                "v": "2007",
+                "l": "2007"
+              }
+            },
+            {
+              "v": {
+                "v": "2006",
+                "l": "2006"
+              }
+            },
+            {
+              "v": {
+                "v": "2005",
+                "l": "2005"
+              }
+            },
+            {
+              "v": {
+                "v": "2004",
+                "l": "2004"
+              }
+            },
+            {
+              "v": {
+                "v": "2003",
+                "l": "2003"
+              }
+            },
+            {
+              "v": {
+                "v": "2002",
+                "l": "2002"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  }
+]
