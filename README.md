@@ -40,7 +40,7 @@ Ces jeux de données couplés aux outils comme OpenRefine, Datwrapper, Flourish 
 
 # 3. Commençons par l’Île-de-France… <a name="3"></a>
 
-Je commence mon exploration en visualisant tout ce qui s’offre à moi, sans aller trop loin. Pour cela, je créer une carte affichant tous les « Musées de France » en Île-de-France.
+Je commence mon exploration en visualisant tout ce qui s’offre à moi, sans aller trop loin. Pour cela, je vais utiliser mon premier fichier (liste-des-musees-franciliens-V2), le nettoyer sur OpenRefine et créer une carte affichant tous les « Musées de France » en Île-de-France.
 
 <iframe title="Les &quot;Musées de France&quot; en Île-de-France" aria-label="Carte" id="datawrapper-chart-2JZHu" src="https://datawrapper.dwcdn.net/2JZHu/9/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="808" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 </script>
@@ -62,7 +62,7 @@ Il peut y avoir plusieurs raisons pour cela :
 *	Paris est la capitale de la France et donc un pôle culturel et touristique majeur. Donc plus de visiteurs et plus de ressources pour maintenir le patrimoine.
 *	Les acteurs majeurs responsables de  l’attribution du label « Musée de France », le Ministère de la Culture et le Service des musées de France, sont basés à Paris. J’image que cela influence  aussi le nombre de musées labellisés dans la région.
 
-[Merci Wikipedia]( https://fr.wikipedia.org/wiki/Paris) et [Merci Ministère de la Culture](https://www.culture.gouv.fr/Thematiques/Musees/Les-musees-en-France/Les-musees-de-France/Le-reseau-des-musees-de-France)
+*[Merci Wikipedia]( https://fr.wikipedia.org/wiki/Paris) et [Merci Ministère de la Culture](https://www.culture.gouv.fr/Thematiques/Musees/Les-musees-en-France/Les-musees-de-France/Le-reseau-des-musees-de-France)*
 
 Cela tombe bien, car je suis fauchée et je n’ai pas le permis. Plus encore, en 6 jours (avant mon anniversaire) je n’ai pas le temps d’aller visiter les « Musées de France » de toute l’Île-de-France.
 
@@ -118,6 +118,8 @@ Après avoir comblé les données manquantes, je croisent ce jeu de données ave
 Je vois qu'il y à peu près autant de musées parisiens avec le label « Musées de France » et que sans. Toutefois, et c'est un choix personnel, je préfère les musées labbilisées. Je préfère aussi suivre le mouvement des gens tel un moutons. C'est pour cela que je cherche maintenant à savoir quels musées sont les plus visités.
 
 # Quels sont les musées que préfèrent les gens <a name="5"></a>
+
+J'utilise maintenant mon second fichier pour 
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/16601101"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
