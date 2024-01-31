@@ -51,7 +51,24 @@ Je réalise donc un Treemap, ou une carte proportionnelle :
 
 <div class="flourish-embed flourish-hierarchy" data-src="visualisation/16629623"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
- 
+Donc ma constatation visuelle était bien correcte, les "Mus
+
+Donc ma constatation visuelle était bien correcte : les « Musées de France en Île-de-France » se retrouvent surtout autour de Paris.
+
+Il peut y avoir plusieurs raisons pour cela :
+
+*	Paris est une ville qui a une longue histoire culturelle et artistique. En effet, elle a été le centre de beaucoup de mouvement antistatique (Renaissance, Lumières, etc.) et a donc accumulé, au fil des années, un patrimoine important.
+*	Paris a une densité de population de 20 238 habitants par km2. Cette densité urbaine élevée favorise la création et la fréquentation de musées.
+*	Paris est la capitale de la France et donc un pôle culturel et touristique majeur. Donc plus de visiteurs et plus de ressources pour maintenir le patrimoine.
+*	Les acteurs majeurs responsables de  l’attribution du label « Musée de France », le Ministère de la Culture et le Service des musées de France, sont basés à Paris. J’image que cela influence  aussi le nombre de musées labellisés dans la région.
+
+[Merci Wikipedia]( https://fr.wikipedia.org/wiki/Paris) et [Merci Ministère de la Culture](https://www.culture.gouv.fr/Thematiques/Musees/Les-musees-en-France/Les-musees-de-France/Le-reseau-des-musees-de-France)
+
+Cela tombe bien, car je suis fauchée et je n’ai pas le permis. Plus encore, en 6 jours (avant mon anniversaire) je n’ai pas le temps d’aller visiter les « Musées de France » de toute l’Île-de-France.
+
+# 4. Zoomons maintenant sur Paris <a name="4"></a>
+
+
 
 # 4. Musées situés à Paris labélisés "Musées de France" <a name="4"></a>
 
