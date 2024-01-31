@@ -82,8 +82,9 @@ Je veux voir la liste de tous les « Musées de France » situé à Paris. Je r�
 
 Je veux maintenant savoir quel est leur âge. Ou plutôt, quel est leur date de création. Il suffit d'une réconciliation sur OpenRefine pour exaucer mon vœux. Je créer ainsi une frise chronologique des date d’ouverture officielle des musées parisiens ayant le label « Musées de France » en les répartissant par arrondissement :
 
-<div class="flourish-embed flourish-scatter" data-src="visualisation/16636476"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-> *[Jeu de données utilisé : Fichier 1](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-franciliens-V2.csv)*
+<div class="flourish-embed flourish-scatter" data-src="visualisation/16648982"><script src="https://public.flourish.studio/resources/embed.js"></script></div>> 
+
+*[Jeu de données utilisé : Fichier 1](https://github.com/AfreenAKHLAQ/Data-Visualisation/blob/main/liste-des-musees-franciliens-V2.csv)*
 
 Voilà ! Maintenant je sais qu'il n'y a pas de « Musées de France » dans 2ème et le 20ème arrondissment mais qu'il y en a 7 dans 16ème. Pourquoi ne pas commencer mes Sorties Musées par le 16ème arrondissement donc ?
 
